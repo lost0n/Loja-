@@ -223,7 +223,7 @@ footer {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .hr {
     width: 700px;
   }
@@ -253,7 +253,7 @@ footer {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 819px) {
   /*NAV-BAR*/
 
   #nav-bar {
