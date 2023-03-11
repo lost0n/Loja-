@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+  position: relative;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+#wrapper-nav {
+  position: relative;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  margin-bottom: 4rem;
+}
+
+#nav-background {
+  background-color: #000;
+}
+
+#logo {
+  width: 80px;
+  cursor: pointer;
+}
+
+#menu {
+  color: white;
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.options {
+  padding: 2rem;
+  margin-bottom: 1px;
+  position: relative;
+  cursor: pointer;
+}
+
+.options::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.options:hover::after {
+  width: 100%;
+}
+
+#search-div {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 0.3rem;
+  border-radius: 1rem;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+}
+
+.search-button {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.search-button span {
+  font-size: 1.2rem;
+}
+
+#card-nike {
+  text-align: center;
+}
+
+.card-img {
+  width: 350px;
+}
+
+.card-button {
+  border: none;
+  outline: none;
+  background-color: #000;
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background-color: #838383;
+}
+
+#nike-shoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.shoes-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 200px;
+  height: 250px;
+  box-shadow: 1px 1px 7px 1px #00000023;
+  border-radius: 5px;
+}
+
+.shoes-img {
+  width: 150px;
+  margin-left: 25px;
+}
+
+.shoes-name {
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.shoes-price {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #18c03c;
+}
+
+.shoes-buy {
+  outline: none;
+  border: none;
+  padding: 0.6rem;
+  max-width: fit-content;
+  margin: auto;
+  background-color: #000;
+  color: white;
+  font-weight: bold;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.shoes-buy:hover {
+  background-color: #838383;
+}
+
+.buy-cart-buttons {
+  margin: auto;
+}
+
+.shoes-buy span {
+  font-size: 0.8rem;
+}
+
+footer {
+  background-color: #000;
+  padding: 5rem;
+  color: #fff;
+}
+
+#help-footer {
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.footer-menu {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-option {
+  font-size: 0.8rem;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+#direitos-nike {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  text-align: center;
+}
+
+.hr {
+  width: 1200px;
+  margin: 5rem auto;
+}
+
+.hr2 {
+  margin: 5rem 0;
+}
+
+#mobile-button {
+  display: none;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hr {
+    width: 700px;
+  }
+
+  #nav-bar {
+    padding: 0 1rem;
+  }
+
+  .options {
+    padding: 2rem 0;
+  }
+
+  #menu {
+    gap: 1rem;
+  }
+
+  #search-div {
+    width: 150px;
+  }
+
+  .search-input {
+    width: 110px;
+  }
+
+  #help-footer {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  /*NAV-BAR*/
+
+  #nav-bar {
+    padding: 1.5rem;
+    margin: 0;
+  }
+
+  #nav-background {
+    margin-bottom: 2rem;
+  }
+
+  #center-bar {
+    display: none;
+  }
+
+  #search-div {
+    display: none;
+  }
+
+  #mobile-button {
+    display: flex;
+    background-color: transparent;
+    color: #fff;
+    font-size: 5rem;
+  }
+
+  #mobile-menu {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    color: white;
+    list-style: none;
+    gap: 1rem;
+  }
+
+  .options {
+    max-width: fit-content;
+    margin: auto;
+    transition: 1s;
+  }
+
+  .show {
+    display: none;
+  }
+
+  /*NAV-BAR*/
+
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #card-nike {
+    margin-bottom: 4rem;
+  }
+
+  .hr {
+    width: 300px;
+  }
+}

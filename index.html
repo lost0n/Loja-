@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="nav-background">
+      <div id="wrapper-nav">
+        <nav id="nav-bar">
+          <div id="left-bar">
+            <img
+              id="logo"
+              src="https://companieslogo.com/img/orig/NKE.D-14bad6cf.png?t=1632522146"
+              alt=""
+            />
+          </div>
+          <div id="center-bar">
+            <ul id="menu">
+              <li class="options">Lançamentos</li>
+              <li class="options">Feminino</li>
+              <li class="options">Masculino</li>
+              <li class="options">Infantil</li>
+            </ul>
+          </div>
+          <div id="right-bar">
+            <button id="mobile-button" onclick="abrirmenu()">
+              <span class="material-symbols-outlined simbolo"> menu </span>
+            </button>
+            <div id="search-div">
+              <button class="search-button">
+                <span class="material-symbols-outlined"> search </span>
+              </button>
+              <input
+                class="search-input"
+                type="text"
+                placeholder="Buscar item"
+              />
+            </div>
+          </div>
+        </nav>
+        <div id="pushclass" class="show">
+          <ul id="mobile-menu">
+            <li class="options">Lançamentos</li>
+            <li class="options">Feminino</li>
+            <li class="options">Masculino</li>
+            <li class="options">Infantil</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="card-nike">
+        <picture>
+          <source
+            width="900px"
+            srcset="img/grande.png"
+            media="(min-width: 1000px)"
+          />
+          <source
+            srcset="img/pequeno.png"
+            media="(max-width: 450px)"
+            width="300px"
+          />
+          <img src="img/grande.png" width="600px" alt="" />
+        </picture>
+        <div id="card-buttons">
+          <button class="card-button">Compre Aqui</button>
+          <button class="card-button">Saiba Mais</button>
+        </div>
+      </div>
+      <hr class="hr" />
+      <div id="nike-shoes">
+        <div class="shoes-card">
+          <img
+            src="https://maze.cdn.plataformaneo.com.br/produto/multifotos/hd/20230310112516_2362997638_DZ.png"
+            alt=""
+            class="shoes-img"
+          />
+          <p class="shoes-name">
+            TÊNIS NIKE DUNK LOW <br />
+            "PINK PAISLEY"
+          </p>
+          <p class="shoes-price">R$ 999,99</p>
+          <div class="buy-cart-buttons">
+            <button class="shoes-buy">COMPRAR</button>
+            <button class="shoes-buy">
+              <span class="material-symbols-outlined"> shopping_cart </span>
+            </button>
+          </div>
+        </div>
+        <div class="shoes-card">
+          <img
+            src="https://maze.cdn.plataformaneo.com.br/produto/20230309172213_3198996802_D.png"
+            alt=""
+            class="shoes-img"
+          />
+          <p class="shoes-name">
+            TÊNIS NIKE AIR FORCE <br />
+            "NEXT NATURE"
+          </p>
+          <p class="shoes-price">R$ 999,99</p>
+          <div class="buy-cart-buttons">
+            <button class="shoes-buy">COMPRAR</button>
+            <button class="shoes-buy">
+              <span class="material-symbols-outlined"> shopping_cart </span>
+            </button>
+          </div>
+        </div>
+        <div class="shoes-card">
+          <img
+            src="https://maze.cdn.plataformaneo.com.br/produto/20230309095109_1841998159_D.png"
+            alt=""
+            class="shoes-img"
+          />
+          <p class="shoes-name">
+            TÊNIS NIKE AIR MAX PLUS <br />
+            "UNIVERSITY BLUE
+          </p>
+          <p class="shoes-price">R$ 999,99</p>
+          <div class="buy-cart-buttons">
+            <button class="shoes-buy">COMPRAR</button>
+            <button class="shoes-buy">
+              <span class="material-symbols-outlined"> shopping_cart </span>
+            </button>
+          </div>
+        </div>
+        <div class="shoes-card">
+          <img
+            src="https://maze.cdn.plataformaneo.com.br/produto/20230309084420_2487997513_D.png"
+            alt=""
+            class="shoes-img"
+          />
+          <p class="shoes-name">
+            TÊNIS AIR JORDAN 6 RETRO <br />
+            "COOL GREY"
+          </p>
+          <p class="shoes-price">R$ 999,99</p>
+          <div class="buy-cart-buttons">
+            <button class="shoes-buy">COMPRAR</button>
+            <button class="shoes-buy">
+              <span class="material-symbols-outlined"> shopping_cart </span>
+            </button>
+          </div>
+        </div>
+        <div class="shoes-card">
+          <img
+            src="https://maze.cdn.plataformaneo.com.br/produto/20230309084038_5327994673_D.png"
+            alt=""
+            class="shoes-img"
+          />
+          <p class="shoes-name">
+            TÊNIS NIKE DUNK LOW RETRO <br />
+            "BLACK PANDA"
+          </p>
+          <p class="shoes-price">R$ 999,99</p>
+          <div class="buy-cart-buttons">
+            <button class="shoes-buy">COMPRAR</button>
+            <button class="shoes-buy">
+              <span class="material-symbols-outlined"> shopping_cart </span>
+            </button>
+          </div>
+        </div>
+        <div class="shoes-card">
+          <img
+            src="https://maze.cdn.plataformaneo.com.br/produto/20230308122447_4646995354_D.png"
+            alt=""
+            class="shoes-img"
+          />
+          <p class="shoes-name">
+            TÊNIS NIKE AIR MAX PLUS <br />
+            "RAINBOW"
+          </p>
+          <p class="shoes-price">R$ 999,99</p>
+          <div class="buy-cart-buttons">
+            <button class="shoes-buy">COMPRAR</button>
+            <button class="shoes-buy">
+              <span class="material-symbols-outlined"> shopping_cart </span>
+            </button>
+          </div>
+        </div>
+        <div class="shoes-card">
+          <img
+            src="https://maze.cdn.plataformaneo.com.br/produto/20230224095327_878999122_D.png"
+            alt=""
+            class="shoes-img"
+          />
+          <p class="shoes-name">
+            TÊNIS NIKE AIR JORDAN <br />
+            "DUNK ON MARS"
+          </p>
+          <p class="shoes-price">R$ 999,99</p>
+          <div class="buy-cart-buttons">
+            <button class="shoes-buy">COMPRAR</button>
+            <button class="shoes-buy">
+              <span class="material-symbols-outlined"> shopping_cart </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div id="help-footer">
+          <ul class="footer-menu">
+            Encontre Uma Loja Nike
+            <li class="footer-option">Cadastre-se para receber novidades</li>
+            <li class="footer-option">Cartão Presente</li>
+          </ul>
+          <ul class="footer-menu">
+            Ajuda
+            <li class="footer-option">Dúvidas Gerais</li>
+            <li class="footer-option">Encontre seu Tamanho</li>
+            <li class="footer-option">Entregas</li>
+            <li class="footer-option">Pedidos</li>
+            <li class="footer-option">Trocas e Devoluções</li>
+            <li class="footer-option">Pagamentos</li>
+            <li class="footer-option">Produtos</li>
+            <li class="footer-option">Corporativo</li>
+            <li class="footer-option">Fale Conosco</li>
+          </ul>
+          <ul class="footer-menu">
+            Sobre a Nike
+            <li class="footer-option">Feito para Jogar</li>
+            <li class="footer-option">Sustentabilidade</li>
+          </ul>
+        </div>
+        <hr class="hr2" />
+        <div id="direitos-nike">
+          <p class="footer-option">Brasil</p>
+          <p class="footer-option">Política de Privacidade</p>
+          <p class="footer-option">Termos de Uso</p>
+          <p class="footer-option">
+            © 2023 <s>Nike</s>. Nenhum direito reservado. Site ilustrativo e de
+            cunho educativo.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
