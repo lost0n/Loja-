@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto';
 }
 
 #wrapper {
@@ -26,7 +26,7 @@
 }
 
 #nav-background {
-  background-color: #000;
+  background-color: #222222;
 }
 
 #logo {
@@ -42,7 +42,7 @@
 }
 
 .options {
-  padding: 2rem;
+  padding: 1.5rem 2rem;
   margin-bottom: 1px;
   position: relative;
   cursor: pointer;
@@ -66,7 +66,7 @@
 #search-div {
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color: #c7c7c7;
   padding: 0.3rem;
   border-radius: 1rem;
 }
@@ -74,19 +74,37 @@
 .search-input {
   border: none;
   outline: none;
+  background-color: #c7c7c7;
 }
 
 .search-button {
   border: none;
   outline: none;
-  background-color: #fff;
+  background-color: #e4e4e4;
   margin-right: 0.5rem;
   cursor: pointer;
+  border-radius: 20rem;
+  padding: 0.2rem;
+  padding-bottom: 0;
+}
+
+#search-div:hover .search-input {
+  background-color: #cfcfcf;
+}
+
+#search-div:hover .search-button {
+  background-color: #fff;
+}
+
+#search-div:hover {
+  background-color: #cfcfcf;
 }
 
 .search-button span {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
+
+/* CARD */
 
 #card-nike {
   text-align: center;
@@ -103,7 +121,7 @@
   padding: 1rem 1.5rem;
   border-radius: 1.5rem;
   color: white;
-  font-weight: bolder;
+  font-weight: 500;
   cursor: pointer;
 }
 
@@ -111,43 +129,30 @@
   background-color: #838383;
 }
 
-#nike-shoes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3rem;
-  margin-bottom: 5rem;
-}
+/* PRODUTOS */
 
-.shoes-card {
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  width: 200px;
-  height: 250px;
-  box-shadow: 1px 1px 7px 1px #00000023;
-  border-radius: 5px;
+.title {
+  margin-left: 5rem;
 }
-
-.shoes-img {
+.produto-img {
   width: 150px;
   margin-left: 25px;
 }
 
-.shoes-name {
+.produto-name {
   font-weight: bold;
   text-align: center;
   font-size: 0.8rem;
 }
 
-.shoes-price {
+.produto-preco {
   text-align: center;
   font-size: 0.9rem;
   font-weight: bold;
   color: #18c03c;
 }
 
-.shoes-buy {
+.produto-comprar {
   outline: none;
   border: none;
   padding: 0.6rem;
@@ -160,7 +165,7 @@
   cursor: pointer;
 }
 
-.shoes-buy:hover {
+.produto-comprar:hover {
   background-color: #838383;
 }
 
@@ -168,12 +173,99 @@
   margin: auto;
 }
 
-.shoes-buy span {
-  font-size: 0.8rem;
+.produto-comprar {
+  font-weight: 500;
 }
 
+.produto-comprar span {
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+/* FILTER */
+
+/* SHOES DIV */
+
+#nike-shoes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  gap: 3rem;
+}
+
+#shoes-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.shoes-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 200px;
+  height: 250px;
+  box-shadow: 1px 1px 7px 1px #00000023;
+  border-radius: 5px;
+}
+
+/* SHITS DIV */
+
+#nike-shirts {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+  gap: 3rem;
+}
+
+#shirts-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.shirts-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 200px;
+  height: 250px;
+  box-shadow: 1px 1px 7px 1px #00000023;
+  border-radius: 5px;
+}
+
+/* PANTS DIV */
+
+#nike-pants {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+  gap: 3rem;
+}
+
+#pants-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.pants-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 200px;
+  height: 250px;
+  box-shadow: 1px 1px 7px 1px #00000023;
+  border-radius: 5px;
+}
+
+/*FOOTER*/
+
 footer {
-  background-color: #000;
+  background-color: #222222;
   padding: 5rem;
   color: #fff;
 }
@@ -195,8 +287,12 @@ footer {
 
 .footer-option {
   font-size: 0.8rem;
-  font-weight: 100;
+  font-weight: 300;
   cursor: pointer;
+}
+
+.footer-option:hover {
+  text-decoration: underline;
 }
 
 #direitos-nike {
@@ -205,6 +301,8 @@ footer {
   gap: 2rem;
   text-align: center;
 }
+
+/* OTHERS*/
 
 .hr {
   width: 1200px;
@@ -217,6 +315,8 @@ footer {
 
 #mobile-button {
   display: none;
+  border: none;
+  outline: none;
 }
 
 #mobile-menu {
@@ -314,5 +414,49 @@ footer {
 
   .hr {
     width: 300px;
+  }
+
+  .produto-img {
+    width: 100px;
+    margin: auto;
+  }
+
+  .shoes-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 125px;
+    height: auto;
+    box-shadow: 1px 1px 7px 1px #00000023;
+    border-radius: 5px;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .shirts-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 125px;
+    height: auto;
+    box-shadow: 1px 1px 7px 1px #00000023;
+    border-radius: 5px;
+    gap: 0.5rem;
+  }
+
+  .pants-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 125px;
+    height: auto;
+    box-shadow: 1px 1px 7px 1px #00000023;
+    border-radius: 5px;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .title {
+    margin: auto;
   }
 }
