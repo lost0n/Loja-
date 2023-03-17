@@ -171,6 +171,7 @@
 
 .buy-cart-buttons {
   margin: auto;
+  margin-bottom: 0.5rem;
 }
 
 .produto-comprar {
@@ -303,6 +304,10 @@ footer {
 }
 
 /* OTHERS*/
+
+hr {
+  border: 0.5px solid #dbdbdb6c;
+}
 
 .hr {
   width: 1200px;
